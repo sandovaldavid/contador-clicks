@@ -1,36 +1,123 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Click Counter App 🔢
 
-## Getting Started
+![Next.js](https://img.shields.io/badge/Next.js-14.2.5-black)
+![React](https://img.shields.io/badge/React-18-blue)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-First, run the development server:
+A simple yet elegant click counter application built with Next.js and React. This project demonstrates the use of React hooks, component composition, and CSS styling in a Next.js application.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+![Devsolution Logo](public/Images/DEVSOLUTION-Logo-2.png)
+
+## 📋 Features
+
+- Interactive click counter
+- Responsive design
+- Clean and modern UI
+- Reset functionality
+- Component-based architecture
+
+## 🚀 Demo
+
+[Live Demo](https://contador-clicks.devprojects.tech/) *(Add your deployed application URL)*
+
+## 🛠️ Technologies Used
+
+| Technology | Version | Purpose |
+|------------|---------|----------|
+| Next.js | 14.2.5 | Frontend Framework |
+| React | 18 | UI Library |
+| CSS Modules | - | Styling |
+
+## 💻 Installation
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/sandovaldavid/contador-clicks.git
+    ```
+
+2. Install dependencies:
+
+    ```bash
+    npm install
+    ```
+
+3. Run the development server:
+
+    ```bash
+    npm run dev
+    ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+## 🏗️ Project Structure
+
+``` note
+src/
+├── app/                 # App router and layout files
+├── Components/          # React components
+│   ├── Button.jsx      # Reusable button component
+│   └── Counter.jsx     # Counter display component
+└── Styles/             # CSS styles
+    ├── Button.css
+    └── Counter.css
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔧 Usage
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+The app consists of two main interactive elements:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Click Button**: Increments the counter by 1
+- **Reset Button**: Resets the counter to 0
 
-## Learn More
+## 📝 Component Documentation
 
-To learn more about Next.js, take a look at the following resources:
+### Button Component
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```jsx
+<Button 
+  text="String"           // Button text
+  isClickButton={boolean} // Determines button style
+  clickFunction={func}    // Click handler function
+/>
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Counter Component
 
-## Deploy on Vercel
+```jsx
+<Counter 
+  clicknum={number} // Number to display
+/>
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🤝 Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📜 Scripts
+
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Starts development server |
+| `npm run build` | Builds the application |
+| `npm start` | Starts production server |
+| `npm run lint` | Runs linter |
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE.md file for details
+
+---
+
+### 📚 Additional Resources
+
+- [Next.js Documentation](https://nextjs.org/docs)
+- [React Documentation](https://reactjs.org/docs)
+
+---
+
+*Built with ❤️ by Devsolution*
